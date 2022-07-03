@@ -9,6 +9,7 @@ DEVICE_PATH := device/motorola/xpeng
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
+ALL_LC := C
 
 # Architecture
 TARGET_ARCH := arm64
@@ -30,7 +31,6 @@ TARGET_OTA_ASSERT_DEVICE := xpeng
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296 # This is the maximum known partition size, but it can be higher, so we just omit it
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
